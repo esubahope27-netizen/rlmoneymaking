@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -38,10 +39,13 @@ nav a {
   padding: 12px 25px;
   text-decoration: none;
   font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 .features {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 50px 20px;
 }
@@ -51,6 +55,7 @@ nav a {
   padding: 25px;
   width: 28%;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
 }
 
 .page-section {
@@ -76,6 +81,7 @@ button {
   color: white;
   border: none;
   padding: 10px 20px;
+  cursor: pointer;
 }
 
 footer {
@@ -83,4 +89,19 @@ footer {
   padding: 15px;
   background: #0b1c2d;
   color: white;
+}
+
+/* WhatsApp button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 1000;
 }
